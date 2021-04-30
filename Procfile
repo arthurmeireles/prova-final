@@ -1,2 +1,2 @@
-web: gunicorn prova-final
+web: npm run start
 
