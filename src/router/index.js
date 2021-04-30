@@ -1,6 +1,9 @@
 import Vue from "vue";
 import Router from "vue-router";
 import paginaInicial from "../components/paginaInicial"
+import estudios from "../components/estudios"
+import tatuadores from "../components/tatuadores"
+
 
 Vue.use(Router);
 const routes = [
@@ -10,6 +13,22 @@ const routes = [
     component: paginaInicial,
     meta: {
       title: "Página Inicial",
+    },
+  },
+  { 
+    path: "/estudios",
+    name: "estudios",
+    component: estudios,
+    meta: {
+      title: "Estudios",
+    },
+  },
+  { 
+    path: "/tatuadores",
+    name: "tatuadores",
+    component: tatuadores,
+    meta: {
+      title: "Tatuadores",
     },
   },
 
